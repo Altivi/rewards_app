@@ -1,0 +1,6 @@
+<%= paginate @rewards %>
+<%= form_tag rewards_path, method: :get do %>
+  <%= select_tag(:filter, options_for_select(Reward.statuses.keys.to_a, @filter), 
+  class: "status-selector") %>
+<% end %>
+<%= render @rewards %>

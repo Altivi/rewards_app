@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  account: one
+  access_token: MyString
+  device_token: MyString
+  device_platform: 1
+
+two:
+  account: two
+  access_token: MyString
+  device_token: MyString
+  device_platform: 1
