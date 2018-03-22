@@ -1,0 +1,11 @@
+class Api::V1::RewardsController < Api::V1::BaseController
+  def index
+    @rewards = current_account.rewards.status(filter_params).page(params[:page])
+  end
+
+  private
+
+  def filter_params
+    Reward.statuses[@filter = params.permit(:filter)[:filter]]
+  end
+end

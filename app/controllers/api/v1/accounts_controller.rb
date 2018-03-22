@@ -1,14 +1,13 @@
-class AccountsController < ApplicationController
-  def edit; end;
+class Api::V1::AccountsController < Api::V1::BaseController
+  def show
+    @account = current_account
+  end
 
   def update
     if current_account.update_with_password(account_params)
-      flash[:success] = 'Account updated'
-      bypass_sign_in(current_account)
-      redirect_to root_path
+      render :show
     else
-      flash[:error] = current_account.errors.full_messages.join(', ')
-      redirect_to edit_account_path
+      render_error(422, 'NotValid', current_account.errors.full_messages.join(', '))
     end
   end
 

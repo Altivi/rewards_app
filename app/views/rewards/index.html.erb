@@ -1,6 +1,22 @@
-<%= paginate @rewards %>
+<%= flash_messages %>
+
 <%= form_tag rewards_path, method: :get do %>
-  <%= select_tag(:filter, options_for_select(Reward.statuses.keys.to_a, @filter), 
-  class: "status-selector") %>
+  <div class="input-group">
+    <%= select_tag(:filter, options_for_select(rewards_options, @filter), include_blank: true, class: "form-control status-selector") %>
+  </div>
 <% end %>
-<%= render @rewards %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Status</th>
+      <th scope="col">Created at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @rewards %>
+  </tbody>
+</table>
+
+<%= paginate @rewards %>

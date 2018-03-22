@@ -1,1 +1,5 @@
-<p><%= reward.status %></p>
+<tr>
+  <th scope="row"><%= reward.id %></th>
+  <td><%= reward.status %></td>
+  <td><%= reward.created_at.strftime('%x %X') %></td>
+</tr>

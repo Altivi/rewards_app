@@ -6,5 +6,7 @@ class Reward < ApplicationRecord
 
   belongs_to :account
 
+  validates :status, presence: true
+
   scope :status, -> (status) { where(status: status) if status }
 end

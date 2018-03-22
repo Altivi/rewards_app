@@ -1,6 +1,4 @@
 class Api::V1::BaseController < ActionController::API
-  protect_from_forgery with: :null_session
-
   rescue_from ActiveRecord::RecordNotFound, with: :render_not_found
   rescue_from ActionController::ParameterMissing, with: :render_parameter_missing
 

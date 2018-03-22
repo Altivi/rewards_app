@@ -16,8 +16,8 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){
+$(document).on('turbolinks:load', function() {
   $(".status-selector").on ('change', function(){
-    $(this).parent('form').submit();
+    $(this).parents('form:first').submit();
   });
 });

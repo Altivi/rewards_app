@@ -8,6 +8,6 @@
 
 account = Account.create!(email: 'test@test.com', password: '123123', name: 'Test Account')
 
-100.times {
+500.times {
   account.rewards.create!(status: Reward.statuses.keys.sample)
 }
