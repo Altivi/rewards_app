@@ -1,24 +1,13 @@
-# README
+# Blueboard Test
+### Installation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. setup database.yml
+2. run rails db:setup db:migrate db:seed
+3. run rails s
 
-Things you may want to cover:
+Login: test@test.com
+Password: 123123
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Additional features
+* API Sessions (described in API docs)
+* API documentation path - /api/docs

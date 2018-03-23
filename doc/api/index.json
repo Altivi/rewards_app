@@ -1,0 +1,71 @@
+{
+  "resources": [
+    {
+      "name": "Accounts",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Get account info",
+          "link": "accounts/get_account_info.json",
+          "groups": "all",
+          "route": "/api/v1/account",
+          "method": "get"
+        },
+        {
+          "description": "Update account (valid)",
+          "link": "accounts/update_account_(valid).json",
+          "groups": "all",
+          "route": "/api/v1/account",
+          "method": "put"
+        },
+        {
+          "description": "Update account (invalid)",
+          "link": "accounts/update_account_(invalid).json",
+          "groups": "all",
+          "route": "/api/v1/account",
+          "method": "put"
+        }
+      ]
+    },
+    {
+      "name": "Rewards",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Get all rewards",
+          "link": "rewards/get_all_rewards.json",
+          "groups": "all",
+          "route": "/api/v1/rewards",
+          "method": "get"
+        }
+      ]
+    },
+    {
+      "name": "Sessions",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Sign in (valid)",
+          "link": "sessions/sign_in_(valid).json",
+          "groups": "all",
+          "route": "/api/v1/session/",
+          "method": "post"
+        },
+        {
+          "description": "Sign in (invalid)",
+          "link": "sessions/sign_in_(invalid).json",
+          "groups": "all",
+          "route": "/api/v1/session/",
+          "method": "post"
+        },
+        {
+          "description": "Sign out",
+          "link": "sessions/sign_out.json",
+          "groups": "all",
+          "route": "/api/v1/session/",
+          "method": "delete"
+        }
+      ]
+    }
+  ]
+}

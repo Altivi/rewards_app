@@ -7,5 +7,9 @@ module ApiAuthentications
       @session_params = options[:session]
       @errors = []
     end
+
+    def authenticate
+      raise NotImplementedError
+    end
   end
 end

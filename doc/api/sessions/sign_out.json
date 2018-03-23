@@ -1,0 +1,37 @@
+{
+  "resource": "Sessions",
+  "resource_explanation": null,
+  "http_method": "DELETE",
+  "route": "/api/v1/session/",
+  "description": "Sign out",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/api/v1/session/",
+      "request_body": null,
+      "request_headers": {
+        "Access-Token": "PVy58pVGRxnQ1LwXUcpWBsbx",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"message\": \"You have successfully signed out\"\n}",
+      "response_headers": {
+        "Access-Token": "PVy58pVGRxnQ1LwXUcpWBsbx",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

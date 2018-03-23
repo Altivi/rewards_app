@@ -1,7 +1,7 @@
 class Api::V1::AccountsController < Api::V1::BaseController
-  def show
-    @account = current_account
-  end
+  before_action :set_account
+
+  def show; end;
 
   def update
     if current_account.update_with_password(account_params)
@@ -21,5 +21,9 @@ class Api::V1::AccountsController < Api::V1::BaseController
       :current_password,
       :password_confirmation
     )
+  end
+
+  def set_account
+    @account = current_account
   end
 end

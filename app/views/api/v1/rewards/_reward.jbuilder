@@ -1,0 +1,1 @@
+json.(reward, :id, :status, :created_at)

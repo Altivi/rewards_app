@@ -1,0 +1,62 @@
+{
+  "resource": "Accounts",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/account",
+  "description": "Update account (valid)",
+  "explanation": null,
+  "parameters": [
+    {
+      "scope": "account",
+      "name": "email",
+      "description": "Email"
+    },
+    {
+      "scope": "account",
+      "name": "name",
+      "description": "Name"
+    },
+    {
+      "scope": "account",
+      "required": true,
+      "name": "current_password",
+      "description": "Current password"
+    },
+    {
+      "scope": "account",
+      "name": "password",
+      "description": "New password"
+    },
+    {
+      "scope": "account",
+      "name": "password_confirmation",
+      "description": "New password confirmation"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/account",
+      "request_body": "account[email]=test%40test.com&account[name]=Test+Test&account[current_password]=123123&account[password]=new_password&account[password_confirmation]=new_password",
+      "request_headers": {
+        "Access-Token": "K8Tg3CuuD5cJToAJ6R4p1HBb",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 35,\n  \"email\": \"test@test.com\",\n  \"name\": \"Test Test\"\n}",
+      "response_headers": {
+        "Access-Token": "K8Tg3CuuD5cJToAJ6R4p1HBb",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

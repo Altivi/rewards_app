@@ -21,13 +21,13 @@ class Api::V1::SessionsController < Api::V1::BaseController
   def set_current_session(authentication)
     @current_session = authentication.session
     @account = authentication.account
-    set_access_token_to_header(@current_session) 
+    set_access_token_to_header (@current_session) 
   end
 
   def authentication_params
     {
       account: account_params,
-      session: session_params,
+      session: session_params
     }
   end
 

@@ -1,0 +1,36 @@
+{
+  "resource": "Accounts",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/account",
+  "description": "Get account info",
+  "explanation": null,
+  "parameters": [
+
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/account",
+      "request_body": null,
+      "request_headers": {
+        "Access-Token": "KtJJh9pEojRgx7iGXDwPRrrT"
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"id\": 34,\n  \"email\": \"fern_carroll@yost.name\",\n  \"name\": \"Sydnie Kessler\"\n}",
+      "response_headers": {
+        "Access-Token": "KtJJh9pEojRgx7iGXDwPRrrT",
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
